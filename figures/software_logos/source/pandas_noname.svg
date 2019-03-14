@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with matplotlib (http://matplotlib.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="73pt"
+   version="1.1"
+   viewBox="0 0 225.64 73"
+   width="225.64pt"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pandas_noname.svg">
+  <metadata
+     id="metadata208">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1163"
+     id="namedview206"
+     showgrid="false"
+     inkscape:zoom="1.2814815"
+     inkscape:cx="-2.8199262"
+     inkscape:cy="221.83697"
+     inkscape:window-x="0"
+     inkscape:window-y="339"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs4"
+     style="stroke-linecap:butt;stroke-linejoin:round">
+    <style
+       type="text/css"
+       id="style6">
+*{stroke-linecap:butt;stroke-linejoin:round;}
+  </style>
+  </defs>
+  <g
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     id="axes_1"
+     transform="translate(-193.9,-8.5)">
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_2">
+      <path
+         inkscape:connector-curvature="0"
+         id="path14"
+         style="fill:#ffffff;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 194.4,81 69.12,0 0,-72 -69.12,0 z" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_3">
+      <path
+         inkscape:connector-curvature="0"
+         id="path17"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 197.54182,45 6.44475,0 0,-25.2 -6.44475,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_4">
+      <path
+         inkscape:connector-curvature="0"
+         id="path20"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 205.59776,54.6 6.44476,0 0,-9.6 -6.44476,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_5">
+      <path
+         inkscape:connector-curvature="0"
+         id="path23"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 213.65371,45 6.44475,0 0,-13.2 -6.44475,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_6">
+      <path
+         inkscape:connector-curvature="0"
+         id="path26"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 221.70965,45 6.44476,0 0,-30 -6.44476,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_7">
+      <path
+         inkscape:connector-curvature="0"
+         id="path29"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 229.76559,70.2 6.44476,0 0,-25.2 -6.44476,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_8">
+      <path
+         inkscape:connector-curvature="0"
+         id="path32"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 237.82154,51 6.44475,0 0,-6 -6.44475,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_9">
+      <path
+         inkscape:connector-curvature="0"
+         id="path35"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 245.87748,69 6.44476,0 0,-24 -6.44476,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_10">
+      <path
+         inkscape:connector-curvature="0"
+         id="path38"
+         style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 253.93343,45 6.44475,0 0,-18 -6.44475,0 z"
+         clip-path="url(#p65e1c8b035)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_11">
+      <path
+         inkscape:connector-curvature="0"
+         id="path41"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 194.4,81 0,-72" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_12">
+      <path
+         inkscape:connector-curvature="0"
+         id="path44"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 263.52,81 0,-72" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_13">
+      <path
+         inkscape:connector-curvature="0"
+         id="path47"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 194.4,81 69.12,0" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_14">
+      <path
+         inkscape:connector-curvature="0"
+         id="path50"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 194.4,9 69.12,0" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="matplotlib.axis_1" />
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="matplotlib.axis_2" />
+  </g>
+  <g
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     id="axes_2"
+     transform="translate(-193.9,-8.5)">
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_15">
+      <path
+         inkscape:connector-curvature="0"
+         id="path56"
+         style="fill:#ffffff;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 272.16,81 69.12,0 0,-72 -69.12,0 z" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="line2d_1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path59"
+         style="fill:none;stroke:#1f77b4;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round"
+         d="m 275.30182,28.25879 8.97662,-15.986063 8.97662,65.454546 8.97663,-3.725297 8.97662,1.461323 8.97662,-53.330994 8.97663,33.82535 8.97662,5.340915"
+         clip-path="url(#p4dc94feb3b)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="line2d_2">
+      <path
+         inkscape:connector-curvature="0"
+         id="path62"
+         style="fill:none;stroke:#ff7f0e;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round"
+         d="m 275.30182,61.597884 8.97662,3.282935 8.97662,7.923558 8.97663,-27.712493 8.97662,7.468067 8.97662,16.267638 8.97663,-48.125965 8.97662,12.675721"
+         clip-path="url(#p4dc94feb3b)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="line2d_3">
+      <path
+         inkscape:connector-curvature="0"
+         id="path65"
+         style="fill:none;stroke:#2ca02c;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round"
+         d="m 275.30182,61.030555 8.97662,-7.69359 8.97662,17.238272 8.97663,-45.263114 8.97662,34.324255 8.97662,-44.120311 8.97663,2.762201 8.97662,-2.57297"
+         clip-path="url(#p4dc94feb3b)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="line2d_4">
+      <path
+         inkscape:connector-curvature="0"
+         id="path68"
+         style="fill:none;stroke:#d62728;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round"
+         d="m 275.30182,24.671958 8.97662,0.07966 8.97662,29.613671 8.97663,-31.61834 8.97662,20.382852 8.97662,13.662911 8.97663,-20.444602 8.97662,-13.913949"
+         clip-path="url(#p4dc94feb3b)" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_16">
+      <path
+         inkscape:connector-curvature="0"
+         id="path71"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 272.16,81 0,-72" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_17">
+      <path
+         inkscape:connector-curvature="0"
+         id="path74"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 341.28,81 0,-72" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_18">
+      <path
+         inkscape:connector-curvature="0"
+         id="path77"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 272.16,81 69.12,0" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_19">
+      <path
+         inkscape:connector-curvature="0"
+         id="path80"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 272.16,9 69.12,0" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="matplotlib.axis_3" />
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="matplotlib.axis_4" />
+  </g>
+  <g
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     id="axes_3"
+     transform="translate(-193.9,-8.5)">
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_20">
+      <path
+         inkscape:connector-curvature="0"
+         id="path86"
+         style="fill:#ffffff;stroke-linecap:butt;stroke-linejoin:round"
+         d="m 349.92,81 69.12,0 0,-72 -69.12,0 z" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="PolyCollection_1">
+      <defs
+         id="defs89">
+        <path
+           style="stroke-linecap:butt;stroke-linejoin:round"
+           inkscape:connector-curvature="0"
+           id="m81de97919c"
+           d="m 353.06182,-31.491429 0,22.491429 6.98182,0 6.98182,0 6.98181,0 6.98182,0 6.98182,0 6.98182,0 6.98182,0 6.98181,0 6.98182,0 0,-13.165714 0,0 -6.98182,-7.131429 -6.98181,14.262857 -6.98182,-10.422857 -6.98182,6.034286 -6.98182,-9.874286 -6.98182,4.388572 -6.98181,-10.971429 -6.98182,18.102857 -6.98182,-13.714286 z" />
+      </defs>
+      <g
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="g92"
+         clip-path="url(#pfceed726e3)">
+        <use
+           height="100%"
+           width="100%"
+           id="use94"
+           y="90"
+           xlink:href="#m81de97919c"
+           x="0"
+           style="fill:#1f77b4;stroke-linecap:butt;stroke-linejoin:round" />
+      </g>
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="PolyCollection_2">
+      <defs
+         id="defs97">
+        <path
+           style="stroke-linecap:butt;stroke-linejoin:round"
+           inkscape:connector-curvature="0"
+           id="maaf380e772"
+           d="m 353.06182,-56.725714 0,25.234285 6.98182,13.714286 6.98182,-18.102857 6.98181,10.971429 6.98182,-4.388572 6.98182,9.874286 6.98182,-6.034286 6.98182,10.422857 6.98181,-14.262857 6.98182,7.131429 0,-19.2 0,0 -6.98182,-3.291429 -6.98181,7.68 -6.98182,4.937143 -6.98182,-0.548571 -6.98182,-14.811429 -6.98182,9.874286 -6.98181,-3.84 -6.98182,6.582857 -6.98182,-21.942857 z" />
+      </defs>
+      <g
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="g100"
+         clip-path="url(#pfceed726e3)">
+        <use
+           height="100%"
+           width="100%"
+           id="use102"
+           y="90"
+           xlink:href="#maaf380e772"
+           x="0"
+           style="fill:#ff7f0e;stroke-linecap:butt;stroke-linejoin:round" />
+      </g>
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="PolyCollection_3">
+      <defs
+         id="defs105">
+        <path
+           style="stroke-linecap:butt;stroke-linejoin:round"
+           inkscape:connector-curvature="0"
+           id="m31c02dcfcb"
+           d="m 353.06182,-77.571429 0,20.845715 6.98182,21.942857 6.98182,-6.582857 6.98181,3.84 6.98182,-9.874286 6.98182,14.811429 6.98182,0.548571 6.98182,-4.937143 6.98181,-7.68 6.98182,3.291429 0,-17.554286 0,0 -6.98182,-5.485714 -6.98181,14.811428 -6.98182,8.777143 -6.98182,1.645714 -6.98182,-11.52 -6.98182,1.097143 -6.98181,-8.228571 -6.98182,1.645714 -6.98182,-21.394286 z" />
+      </defs>
+      <g
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="g108"
+         clip-path="url(#pfceed726e3)">
+        <use
+           height="100%"
+           width="100%"
+           id="use110"
+           y="90"
+           xlink:href="#m31c02dcfcb"
+           x="0"
+           style="fill:#2ca02c;stroke-linecap:butt;stroke-linejoin:round" />
+      </g>
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_21">
+      <path
+         inkscape:connector-curvature="0"
+         id="path113"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 349.92,81 0,-72" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_22">
+      <path
+         inkscape:connector-curvature="0"
+         id="path116"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 419.04,81 0,-72" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_23">
+      <path
+         inkscape:connector-curvature="0"
+         id="path119"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 349.92,81 69.12,0" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="patch_24">
+      <path
+         inkscape:connector-curvature="0"
+         id="path122"
+         style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter"
+         d="m 349.92,9 69.12,0" />
+    </g>
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="matplotlib.axis_5" />
+    <g
+       style="stroke-linecap:butt;stroke-linejoin:round"
+       id="matplotlib.axis_6" />
+  </g>
+  <defs
+     id="defs195">
+    <clipPath
+       id="p65e1c8b035"
+       style="stroke-linecap:butt;stroke-linejoin:round">
+      <rect
+         height="72"
+         width="69.120003"
+         x="194.39999"
+         y="9"
+         id="rect198"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
+    </clipPath>
+    <clipPath
+       id="p4dc94feb3b"
+       style="stroke-linecap:butt;stroke-linejoin:round">
+      <rect
+         height="72"
+         width="69.120003"
+         x="272.16"
+         y="9"
+         id="rect201"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
+    </clipPath>
+    <clipPath
+       id="pfceed726e3"
+       style="stroke-linecap:butt;stroke-linejoin:round">
+      <rect
+         height="72"
+         width="69.120003"
+         x="349.92001"
+         y="9"
+         id="rect204"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
+    </clipPath>
+  </defs>
+</svg>

@@ -1,40 +1,61 @@
-\begin{frame}{Hierarchical Clustering}
+\section{Algorithm}
+
+\begin{frame}{Algorithm}
+	\stress{Quantify \enquote{similar}} distributions:\\
+	$\lra$ similarity test, e.g. $\chi^2$ test or Kolmogorov test
+	
+	
+	
+	\bigskip
+	\stress{Build up groups} (\emph{clusters}) of similar distributions:\\
+	Need a clustering algorithm, e.g. hierarchical clustering
+	
+	\bigskip
+	Need to know \stress{how fine} (or coarse) our clustering should be:\\
+	$\lra$ Add experimental error expectation\\
+	$\lra$ Keep as many clusters as we can distinguish
+	
+	
+
+\end{frame}
+
+\begin{frame}{Example: Hierarchical Clustering}
 	\centering
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step0.pdf}\\[2ex]
-		Step 0: 7 points
+		Step 0: 7 points in the parameter space
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step0_curves.pdf}\\[2ex]
-		Step 0: 7 points
+		Step 0: 7 points in the parameter space = 7 distributions
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step1_curves.pdf}\\[2ex]
-		Step 1: 7 clusters
+		Step 1: Every point is its own cluster
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step2_curves.pdf}\\[2ex]
-		Step 1: 6 clusters
+		Step 1: Distributions from cluster 6 and 7 were the most similar $\Lra$ Merged!
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step3_curves.pdf}\\[2ex]
-		Step 1: 5 clusters
+		Step 1: Cluster 4 and 5 were the next most similar clusters $\Lra$ Merged!
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step4_curves.pdf}\\[2ex]
-		Step 1: 4 clusters
+		Step 1: 4 clusters remaining
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step5_curves.pdf}\\[2ex]
-		Step 1: 3 clusters
+		Step 1: 3 clusters remaining
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step6_curves.pdf}\\[2ex]
-		Step 1: 2 clusters
+		Step 1: 2 clusters remaining
 	}
 	\only<+>{
 		\includegraphics[width=10cm]{figures/hierarchy/step7_curves.pdf}\\[2ex]
-		Step 1: 1 cluster
+		Step 1: 1 cluster remaining
 	}
 	
 %	}

@@ -20,6 +20,18 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{Software}
+	\begin{itemize}
+		\item Up to date documentation on read the docs:\\[3ex]
+		\begin{center}\includegraphics[width=0.8\linewidth]{figures/scrot/readthedocs.png}\end{center}
+		\vspace{2ex}
+		\item Interactive tutorials using \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter notebooks}
+		%\includegraphics[width=3cm]{figures/scrot/jupyter.png}
+	\end{itemize}
+	
+	\bigskip
+	
+\end{frame}
 
 \begin{frame}{Software}
 	General steps:
@@ -68,22 +80,30 @@
 	}
 \end{frame}
 
-
 \begin{frame}{Software}{Quick tutorial}
 	Now we cluster it: \\[2ex]
 	
 	{
 		\noindent
-		\ttfamily
+		\ttfamily\small
 		\hlstd{c\ }\hlopt{=\ }\hlstd{}\hlkwd{HierarchyCluster}\hlstd{}\hlopt{(}\hlstd{}\hlstr{"output/scan"}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{"tutorial"}\hlstd{}\hlopt{)}\hspace*{\fill}\\
 		\hlstd{c}\hlopt{.}\hlstd{}\hlkwd{build\textunderscore hierarchy}\hlstd{}\hlopt{()}\hspace*{\fill}\\
 		\hlstd{c}\hlopt{.}\hlstd{}\hlkwd{cluster}\hlstd{}\hlopt{(}\hlstd{max\textunderscore d}\hlopt{=}\hlstd{}\hlnum{0.1}\hlstd{}\hlopt{)}\hspace*{\fill}\\
 		\hlstd{}\hspace*{\fill}\\
-		\hspace*{\fill}\\
-		\mbox{}
+		\hspace*{\fill}
 		\normalfont
 		\normalsize
+	}\\
+	And can have fun plotting: \\[1ex]
+	{
+		\noindent
+		\ttfamily\small
+	\hlstd{cp\ }\hlopt{=\ }\hlstd{}\hlkwd{ClusterPlot}\hlstd{}\hlopt{(}\hlstd{df}\hlopt{)}\hspace*{\fill}\\
+	\hlstd{cp}\hlopt{.}\hlstd{}\hlkwd{scatter}\hlstd{}\hlopt{({[}}\hlstd{}\hlstr{'CVL\textunderscore bctaunutau'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'CSL\textunderscore bctaunutau'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'CT\textunderscore bctaunutau'}\hlstd{}\hlopt{{]})}\hspace*{\fill}\\	
 	}
+	\includegraphics[height=4cm]{figures/plots/3d.pdf}
+\end{frame}
+
+\begin{frame}{Software}{Quick tutorial}
 	
-	And can have fun plotting: \\[2ex]
 \end{frame}

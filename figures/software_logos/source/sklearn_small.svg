@@ -13,13 +13,13 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   width="552.39136"
-   height="180.68182"
-   viewBox="0 0 552.39136 180.68182"
+   width="277.3194"
+   height="149.55879"
+   viewBox="0 0 277.3194 149.55879"
    enable-background="new 0 0 792 612"
    xml:space="preserve"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="sklearn.svg"><metadata
+   sodipodi:docname="sklearn_smaller.svg"><metadata
      id="metadata35"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -38,7 +38,7 @@
      showgrid="false"
      inkscape:zoom="0.38562091"
      inkscape:cx="386.81479"
-     inkscape:cy="-164.74742"
+     inkscape:cy="-195.87046"
      inkscape:window-x="246"
      inkscape:window-y="85"
      inkscape:window-maximized="0"
@@ -81,7 +81,7 @@
          inkscape:connector-curvature="0"
          style="fill:#010101" /></g></g><rect
      x="153.33438"
-     y="65.352829"
+     y="65.352821"
      width="225.242"
      height="83.947998"
      id="rect23"
@@ -90,17 +90,11 @@
      id="text25"
      style="font-size:23.0795002px;font-family:Helvetica;fill:#ffffff"
      x="153.33279"
-     y="81.945923">scikit</text>
+     y="81.945915">scikit</text>
 <rect
      x="224.95938"
      y="137.71883"
      width="327.43201"
      height="42.963001"
      id="rect27"
-     style="fill:none" /><text
-     font-size="23.0795"
-     id="text29"
-     style="font-size:23.0795002px;font-family:Verdana;fill:#010101"
-     x="224.95979"
-     y="155.25743">machine learning in Python</text>
-</svg>
+     style="fill:none" /></svg>

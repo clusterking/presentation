@@ -3,21 +3,31 @@
     Our project is \stress{openly} and \stress{actively} developed on
     \vcenteredinclude{\includegraphics[height=2ex]{figures/software_logos/octocat.pdf}\hspace{-0.05cm}
     \includegraphics[height=2ex]{figures/software_logos/github.pdf}}\\
-    {\color{purple}\url{https://github.com/RD-clustering/B_decays_clustering}}
-    
+    %{\color{purple}\url{https://github.com/clusterking}}
+    \vspace{-1.1cm}
+   
+   {\raisebox{0.45cm}{\scalebox{1.3}{\color[gray]{0.4}\texttt{https://github.com/}}}\hspace{0.1cm}{\includegraphics[height=2cm]{figures/software_logos/clusterking.pdf}}}
+	 
     \bigskip
     Implemented in \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/python.pdf}} using
-    \begin{itemize}
-        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/numpy_noname.pdf}} \texttt{numpy} {\footnotesize(fast numeric operations on arrays)}
-        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/pandas_noname.pdf}} \texttt{pandas} {\footnotesize(dataframes)}
-        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/matplotlib.pdf}} \texttt{matplotlib} {\footnotesize(beautiful plots)}
-        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/sklearn.pdf}} \texttt{scikit-learn} {\footnotesize(clustering tools)}
-        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/scipy.pdf}} \texttt{scipy} {\footnotesize(integration and clustering tools)}
-        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter} {\footnotesize(interactive notebooks)}
-        \item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/wcxf.pdf}} \texttt{wcxf} {\footnotesize(specify Wilson coefficients in a variety of bases)}
-        \item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/wilson.pdf}} \texttt{Wilson} {\footnotesize(running of Wilson coefficients)}
-        \item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/flavio.pdf}} \texttt{Flavio} {\footnotesize(various observables with NP predictions)}
-    \end{itemize}
+    \begin{columns}
+    	\column{0.5\linewidth}
+	    \begin{itemize}
+	        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/numpy_noname.pdf}} \texttt{numpy} {\footnotesize(fast numeric operations on arrays)}
+	        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/pandas_noname.pdf}} \texttt{pandas} {\footnotesize(dataframes)}
+	        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/matplotlib.pdf}} \texttt{matplotlib} {\footnotesize(beautiful plots)}
+	        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/sklearn_small.pdf}} \texttt{scikit-learn} {\footnotesize(clustering tools)}
+	        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/scipy.pdf}} \texttt{scipy} {\footnotesize(integration and clustering tools)}
+	        %\item 
+	    \end{itemize}
+	    \column{0.5\linewidth}
+	    \begin{itemize}
+	    	\item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter} {\footnotesize(interactive notebooks)}
+	    	\item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/wcxf.pdf}} \texttt{wcxf} {\footnotesize(specify Wilson coefficients in a variety of bases)}
+	    	\item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/wilson.pdf}} \texttt{Wilson} {\footnotesize(running of Wilson coefficients)}
+	    	\item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/flavio.pdf}} \texttt{Flavio} {\footnotesize(various observables with NP predictions)}
+	    \end{itemize}
+	 \end{columns}
 \end{frame}
 
 \begin{frame}{Software}
@@ -42,7 +52,8 @@
             \item E.g. simply take an observable from \texttt{flavio}
             \item Parallel processing supported
         \end{itemize}
-        \item (optional) \stress{Add errors}: Easy interface to add various kinds of errors {\footnotesize(Poisson, flat relative errors, errors given by covariance matrix, maximally correlated errors etc.)}
+        \item \stress{Add errors} (optional): Easy interface to add various kinds of errors\\
+         {\footnotesize(Poisson, flat relative errors, errors given by covariance matrix, max. correlated errors etc.)}
         \item \stress{Cluster}: Take the binned distributions and cluster them\\
         {\footnotesize Clustering class is subclassed to support any clustering algorithm}
         \item \stress{Benchmark point}: Select one representative for each cluster
@@ -64,7 +75,9 @@
         tabsize=4
     ]{python}
     
+        d = Data()
         s = Scanner()
+        
         s.set_dfunction(
             bdlnu.dGq2,
             binning=np.linspace(bdlnu.q2min, bdlnu.q2max, 10),

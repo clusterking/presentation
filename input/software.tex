@@ -4,38 +4,41 @@
     \vcenteredinclude{\includegraphics[height=2ex]{figures/software_logos/octocat.pdf}\hspace{-0.05cm}
     \includegraphics[height=2ex]{figures/software_logos/github.pdf}}\\
     %{\color{purple}\url{https://github.com/clusterking}}
-    \vspace{-1.1cm}
+    \vspace{-0.9cm}
    
-   {\raisebox{0.45cm}{\scalebox{1.3}{\color[gray]{0.4}\texttt{https://github.com/}}}\hspace{0.1cm}{\includegraphics[height=2cm]{figures/software_logos/clusterking.pdf}}}
-	 
+   {\raisebox{0.3cm}{\scalebox{1.3}{\color[gray]{0.4}\texttt{https://github.com/}}}\hspace{0.1cm}{\includegraphics[height=1.6cm]{figures/software_logos/clusterking.pdf}}}
+    
+   \vspace{-0.2cm}\hspace{4.2cm}\underline{Cluster}ing of \underline{Kin}ematic \underline Graphs
+    
     \bigskip
     Implemented in \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/python.pdf}} using
     \begin{columns}
-    	\column{0.5\linewidth}
-	    \begin{itemize}
-	        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/numpy_noname.pdf}} \texttt{numpy} {\footnotesize(fast numeric operations on arrays)}
-	        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/pandas_noname.pdf}} \texttt{pandas} {\footnotesize(dataframes)}
-	        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/matplotlib.pdf}} \texttt{matplotlib} {\footnotesize(beautiful plots)}
-	        \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/sklearn_small.pdf}} \texttt{scikit-learn} {\footnotesize(clustering tools)}
-	        \item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/scipy.pdf}} \texttt{scipy} {\footnotesize(integration and clustering tools)}
-	        %\item 
-	    \end{itemize}
-	    \column{0.5\linewidth}
-	    \begin{itemize}
-	    	\item \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter} {\footnotesize(interactive notebooks)}
-	    	\item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/wcxf.pdf}} \texttt{wcxf} {\footnotesize(specify Wilson coefficients in a variety of bases)}
-	    	\item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/wilson.pdf}} \texttt{Wilson} {\footnotesize(running of Wilson coefficients)}
-	    	\item \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/flavio.pdf}} \texttt{Flavio} {\footnotesize(various observables with NP predictions)}
-	    \end{itemize}
-	 \end{columns}
+        \column{0.5\linewidth}
+        \begin{itemize}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/numpy_noname.pdf}} \texttt{numpy} {\footnotesize(fast numerics)}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/pandas_noname.pdf}} \texttt{pandas} {\footnotesize(dataframes)}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/matplotlib.pdf}} \texttt{matplotlib} {\footnotesize(beautiful plots)}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/sklearn_small.pdf}} \texttt{scikit-learn} {\footnotesize(clustering)}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/scipy.pdf}} \texttt{scipy} {\footnotesize(integration and clustering)}
+            %\item 
+        \end{itemize}
+        \column{0.5\linewidth}
+        \begin{itemize}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter} {\footnotesize(interactive notebooks)}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wcxf.pdf}} \texttt{wcxf} {\footnotesize(Wilson coefficients)}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wilson.pdf}} \texttt{Wilson} {\footnotesize(Wilson coeff. running)}
+            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/flavio.pdf}} \texttt{Flavio} {\footnotesize(Observables)}
+        \end{itemize}
+     \end{columns}
 \end{frame}
 
 \begin{frame}{Software}
     \begin{itemize}
-        \item Up to date \stress{documentation} on \vcenteredinclude{\includegraphics[height=2.5ex]{figures/software_logos/rtd_noname.pdf}} \texttt{Read the Docs}:\\[3ex]
+        \item \stress{Documentation} on \vcenteredinclude{\includegraphics[height=2.5ex]{figures/software_logos/rtd_noname.pdf}} \texttt{Read the Docs}:\\[3ex]
         \begin{center}\includegraphics[width=0.8\linewidth]{figures/scrot/readthedocs.png}\end{center}
         \vspace{2ex}
-        \item \stress{Interactive tutorials} using \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter notebooks}
+        \item \stress{Interactive tutorials} using \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter notebooks}\\
+        Can also be run directly without installing anything (\vcenteredinclude{\includegraphics[height=2.5ex]{figures/software_logos/binder_noname.pdf}} \texttt{binder})
         %\includegraphics[width=3cm]{figures/scrot/jupyter.png}
     \end{itemize}
     
@@ -46,23 +49,24 @@
 \begin{frame}{Software}
     General steps:
     \begin{enumerate}
-        \item \stress{Scan}: Calculate binned distributions for your observable, e.g. $\dd\Gamma/\dd q^2$
+        \item \stress{Scan}: Calculate your distribution for every point\\ (Cheap: just use theoretical calculations)\\
+        {\footnotesize e.g. $\dd\Gamma/\dd q^2$ in Wilson space}
         \begin{itemize}
-            \item An arbitrary python function can be specified
-            \item E.g. simply take an observable from \texttt{flavio}
+            \item Arbitrary python functions can be specified (e.g. from \texttt{flavio})
             \item Parallel processing supported
         \end{itemize}
-        \item \stress{Add errors} (optional): Easy interface to add various kinds of errors\\
-         {\footnotesize(Poisson, flat relative errors, errors given by covariance matrix, max. correlated errors etc.)}
+        \item \stress{Add uncertainties} (optional): Easy interface to add various kinds of uncertainties\\
+         %{\footnotesize(Poisson, flat relative errors, errors given by covariance matrix, max. correlated errors etc.)}
         \item \stress{Cluster}: Take the binned distributions and cluster them\\
-        {\footnotesize Clustering class is subclassed to support any clustering algorithm}
+       % {\footnotesize Clustering class is subclassed to support any clustering algorithm}
         \item \stress{Benchmark point}: Select one representative for each cluster
         \item \stress{Plot}: Various plotting methods are provided
     \end{enumerate}
 \end{frame}
 
-\begin{frame}[fragile]{Software}{Quick tutorial}
-    Generate a sample of kinematic distributions (here $\dd\Gamma/\dd q^2$ for $\bdstaunu$) using the \mintinline{python}{Scanner} class:
+\begin{frame}[t, fragile]{Software}{Quick tutorial}
+    Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
+    {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
     
     \begin{minted}[
         mathescape,
@@ -77,12 +81,58 @@
     
         d = Data()
         s = Scanner()
+    \end{minted}
+
+\end{frame}
+
+\begin{frame}[t, fragile]{Software}{Quick tutorial}
+    Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
+    {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
+    
+    \begin{minted}[
+            mathescape,
+        linenos,
+        numbersep=5pt,
+        gobble=8,
+        frame=lines,
+        fontsize=\small,
+        framesep=2mm,
+        tabsize=4
+    ]{python}
+    
+        d = Data()
+        s = Scanner()
         
         s.set_dfunction(
-            bdlnu.dGq2,
-            binning=np.linspace(bdlnu.q2min, bdlnu.q2max, 10),
-            normalize=True
+            dGq2,
+            binning=linspace(q2min, q2max, 10),
         )
+    \end{minted}
+\end{frame}
+
+\begin{frame}[t, fragile]{Software}{Quick tutorial}
+    Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
+    {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
+    
+    \begin{minted}[
+            mathescape,
+        linenos,
+        numbersep=5pt,
+        gobble=8,
+        frame=lines,
+        fontsize=\small,
+        framesep=2mm,
+        tabsize=4
+    ]{python}
+    
+        d = Data()
+        s = Scanner()
+        
+        s.set_dfunction(
+            dGq2,
+            binning=linspace(q2min, q2max, 10),
+        )
+        
         s.set_wpoints_equidist(
             {
                 "CVL_bctaunutau": (-0.3, 0.3, 10),
@@ -93,26 +143,61 @@
             eft='WET',
             basis='flavio'
         )
-        s.run()
-        s.write("output/scan", "tutorial")
     \end{minted}
+\end{frame}
 
+\begin{frame}[t, fragile]{Software}{Quick tutorial}
+    Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
+    {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
+    
+    \begin{minted}[
+            mathescape,
+        linenos,
+        numbersep=5pt,
+        gobble=8,
+        frame=lines,
+        fontsize=\small,
+        framesep=2mm,
+        tabsize=4
+    ]{python}
+    
+        d = Data()
+        s = Scanner()
+        
+        s.set_dfunction(
+            dGq2,
+            binning=linspace(q2min, q2max, 10),
+        )
+        
+        s.set_wpoints_equidist(
+            {
+                "CVL_bctaunutau": (-0.3, 0.3, 10),
+                "CSL_bctaunutau": (-0.3, 0.3, 10),
+                "CT_bctaunutau": (-0.4, 0.4, 10)
+            },
+            scale=5,
+            eft='WET',
+            basis='flavio'
+        )
+        s.run(d)
+    \end{minted}
 \end{frame}
 
 \begin{frame}[fragile]{Software}{Quick tutorial}
     Now we cluster it: 
     
     \begin{minted}[
-    mathescape,
-    linenos,
-    numbersep=5pt,
-    gobble=8,
-    frame=lines,
-    fontsize=\small,
-    framesep=2mm,
-    tabsize=4
+        mathescape,
+        linenos,
+        numbersep=5pt,
+        gobble=8,
+        frame=lines,
+        fontsize=\small,
+        framesep=2mm,
+        tabsize=4
     ]{python}
-        c = HierarchyCluster("output/scan", "tutorial")
+        c = HierarchyCluster(d)
+        c.set_metric()
         c.build_hierarchy()
         c.cluster(max_d=0.1)
     \end{minted}
@@ -132,12 +217,8 @@
         framesep=2mm,
         tabsize=4
         ]{python}
-            cp = ClusterPlot(df)
-            cp.scatter([
-                'CVL_bctaunutau',
-                'CSL_bctaunutau',
-                'CT_bctaunutau'
-            ])
+            cp = ClusterPlot(d)
+            cp.scatter()
         \end{minted}
         \end{changemargin}
         \column{0.6\linewidth}
@@ -159,7 +240,7 @@ fontsize=\small,
 framesep=2mm,
 tabsize=4
 ]{python}
-   cp.scatter(['CVL_bctaunutau', 'CSL_bctaunutau'])
+    cp.scatter(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \vspace{0.2cm}
 \centering
@@ -178,8 +259,32 @@ fontsize=\small,
 framesep=2mm,
 tabsize=4
 ]{python}
-   cp.fill(['CVL_bctaunutau', 'CSL_bctaunutau'])
+    cp.fill(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \centering
 \includegraphics[trim=3cm 0 11cm 0, clip, width=10.5cm]{figures/plots/2dfill.pdf}
+\end{frame}
+
+\begin{frame}[fragile]{Software}{Quick tutorial}
+    \begin{minted}[
+        mathescape,
+        linenos,
+        numbersep=5pt,
+        gobble=8,
+        frame=lines,
+        fontsize=\small,
+        framesep=2mm,
+        tabsize=4
+    ]{python}
+        bp = BundlePlot(d)
+        bp.box_plot()  # left plot
+        bp.plot_minmax(clusters=[0,2])  # right plot
+    \end{minted}
+    
+    \bigskip
+    \begin{changemargin}{-1.2cm}{-1.2cm}
+        %\includegraphics[width=6.8cm]{figures/plots/plot_bundles.pdf}\hspace{-0.5cm}%
+        \includegraphics[width=6.8cm]{figures/plots/box_plot.pdf}\hspace{-0.5cm}
+        \includegraphics[width=6.8cm]{figures/plots/plot_minmax_02.pdf}\\
+    \end{changemargin}
 \end{frame}

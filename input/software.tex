@@ -212,7 +212,11 @@
         framesep=2mm,
         tabsize=4
         ]{python}
-            d.plot_dist_scatter()
+            d.plot_clusters_scatter([
+                "CVL_bctaunutau",
+                "CSL_bctaunutau",
+                "CT_bctaunutau"   
+            ])
         \end{minted}
         \end{changemargin}
         \column{0.6\linewidth}
@@ -234,7 +238,7 @@ fontsize=\small,
 framesep=2mm,
 tabsize=4
 ]{python}
-    d.scatter(['CVL_bctaunutau', 'CSL_bctaunutau'])
+    d.plot_clusters_scatter(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \vspace{0.2cm}
 \centering
@@ -253,7 +257,7 @@ fontsize=\small,
 framesep=2mm,
 tabsize=4
 ]{python}
-    d.fill(['CVL_bctaunutau', 'CSL_bctaunutau'])
+    d.plot_clusters_fill(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \centering
 \includegraphics[trim=3cm 0 11cm 0, clip, width=10.5cm]{figures/plots/2dfill.pdf}

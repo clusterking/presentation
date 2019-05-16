@@ -59,7 +59,7 @@
          %{\footnotesize(Poisson, flat relative errors, errors given by covariance matrix, max. correlated errors etc.)}
         \item \stress{Cluster}: Take the binned distributions and cluster them\\
        % {\footnotesize Clustering class is subclassed to support any clustering algorithm}
-        \item \stress{Benchmark point}: Select one representative for each cluster
+        \item \stress{Benchmark points}: Select one representative for each cluster
         \item \stress{Plot}: Various plotting methods are provided
     \end{enumerate}
 \end{frame}
@@ -72,15 +72,16 @@
         mathescape,
         linenos,
         numbersep=5pt,
-        gobble=8,
+        gobble=6,
         frame=lines,
         fontsize=\small,
         framesep=2mm,
         tabsize=4
     ]{python}
-    
-        d = Data()
-        s = Scanner()
+      import clusterking as ck
+      
+      d = ck.Data()
+      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
     \end{minted}
 
 \end{frame}
@@ -93,20 +94,21 @@
             mathescape,
         linenos,
         numbersep=5pt,
-        gobble=8,
+        gobble=6,
         frame=lines,
         fontsize=\small,
         framesep=2mm,
         tabsize=4
     ]{python}
-    
-        d = Data()
-        s = Scanner()
-        
-        s.set_dfunction(
-            dGq2,
-            binning=linspace(q2min, q2max, 10),
-        )
+      import clusterking as ck
+      
+      d = ck.Data()
+      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
+      
+      s.set_dfunction(
+         dGq2,
+         binning=linspace(q2min, q2max, 10),
+      )
     \end{minted}
 \end{frame}
 
@@ -118,31 +120,27 @@
             mathescape,
         linenos,
         numbersep=5pt,
-        gobble=8,
+        gobble=6,
         frame=lines,
         fontsize=\small,
         framesep=2mm,
         tabsize=4
     ]{python}
-    
-        d = Data()
-        s = Scanner()
-        
-        s.set_dfunction(
-            dGq2,
-            binning=linspace(q2min, q2max, 10),
-        )
-        
-        s.set_wpoints_equidist(
-            {
-                "CVL_bctaunutau": (-0.3, 0.3, 10),
-                "CSL_bctaunutau": (-0.3, 0.3, 10),
-                "CT_bctaunutau": (-0.4, 0.4, 10)
-            },
-            scale=5,
-            eft='WET',
-            basis='flavio'
-        )
+      import clusterking as ck
+      
+      d = ck.Data()
+      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
+      
+      s.set_dfunction(
+         dGq2,
+         binning=linspace(q2min, q2max, 10),
+      )
+      
+      s.set_wpoints_equidist({
+        "CVL_bctaunutau": (-0.3, 0.3, 10),
+        "CSL_bctaunutau": (-0.3, 0.3, 10),
+        "CT_bctaunutau": (-0.4, 0.4, 10)
+      })
     \end{minted}
 \end{frame}
 
@@ -154,32 +152,29 @@
             mathescape,
         linenos,
         numbersep=5pt,
-        gobble=8,
+        gobble=6,
         frame=lines,
         fontsize=\small,
         framesep=2mm,
         tabsize=4
     ]{python}
-    
-        d = Data()
-        s = Scanner()
+      import clusterking as ck
+       
+      d = ck.Data()
+      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
         
-        s.set_dfunction(
-            dGq2,
-            binning=linspace(q2min, q2max, 10),
-        )
-        
-        s.set_wpoints_equidist(
-            {
-                "CVL_bctaunutau": (-0.3, 0.3, 10),
-                "CSL_bctaunutau": (-0.3, 0.3, 10),
-                "CT_bctaunutau": (-0.4, 0.4, 10)
-            },
-            scale=5,
-            eft='WET',
-            basis='flavio'
-        )
-        s.run(d)
+      s.set_dfunction(
+         dGq2,
+         binning=linspace(q2min, q2max, 10),
+      )
+      
+      s.set_wpoints_equidist({
+             "CVL_bctaunutau": (-0.3, 0.3, 10),
+             "CSL_bctaunutau": (-0.3, 0.3, 10),
+             "CT_bctaunutau": (-0.4, 0.4, 10)
+      })
+      
+      s.run(d)
     \end{minted}
 \end{frame}
 
@@ -217,8 +212,7 @@
         framesep=2mm,
         tabsize=4
         ]{python}
-            cp = ClusterPlot(d)
-            cp.scatter()
+            d.plot_dist_scatter()
         \end{minted}
         \end{changemargin}
         \column{0.6\linewidth}
@@ -240,7 +234,7 @@ fontsize=\small,
 framesep=2mm,
 tabsize=4
 ]{python}
-    cp.scatter(['CVL_bctaunutau', 'CSL_bctaunutau'])
+    d.scatter(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \vspace{0.2cm}
 \centering
@@ -259,7 +253,7 @@ fontsize=\small,
 framesep=2mm,
 tabsize=4
 ]{python}
-    cp.fill(['CVL_bctaunutau', 'CSL_bctaunutau'])
+    d.fill(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \centering
 \includegraphics[trim=3cm 0 11cm 0, clip, width=10.5cm]{figures/plots/2dfill.pdf}
@@ -276,9 +270,8 @@ tabsize=4
         framesep=2mm,
         tabsize=4
     ]{python}
-        bp = BundlePlot(d)
-        bp.box_plot()  # left plot
-        bp.plot_minmax(clusters=[0,2])  # right plot
+        d.plot_dist_box()  # left plot
+        d.plot_dist_minmax(clusters=[0,2])  # right plot
     \end{minted}
     
     \bigskip

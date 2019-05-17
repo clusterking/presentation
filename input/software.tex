@@ -1,16 +1,21 @@
 \section{Software}
 \begin{frame}{Software}
+    Can we make this easy for everyone?    
+    
+    \vspace{-0.4cm}
+    {\raisebox{0.3cm}{\scalebox{1.3}{\color[gray]{0.4}\texttt{https://github.com/}}}\hspace{0.1cm}{\includegraphics[height=1.6cm]{figures/software_logos/clusterking.pdf}}}
+   
+    \vspace{-0.25cm}\hspace{4.2cm}{\ckBlue\underline{Cluster}ing \color{black}of \ckRed\underline{Kin}ematic \ckYellow \underline Graphs}
+    
+    \vspace{0.5cm}
+    
     Our project is \stress{openly} and \stress{actively} developed on
     \vcenteredinclude{\includegraphics[height=2ex]{figures/software_logos/octocat.pdf}\hspace{-0.05cm}
-    \includegraphics[height=2ex]{figures/software_logos/github.pdf}}\\
+       \includegraphics[height=2ex]{figures/software_logos/github.pdf}}\\
     %{\color{purple}\url{https://github.com/clusterking}}
     \vspace{-0.9cm}
-   
-   {\raisebox{0.3cm}{\scalebox{1.3}{\color[gray]{0.4}\texttt{https://github.com/}}}\hspace{0.1cm}{\includegraphics[height=1.6cm]{figures/software_logos/clusterking.pdf}}}
     
-   \vspace{-0.2cm}\hspace{4.2cm}{\ckBlue\underline{Cluster}ing \color{black}of \ckRed\underline{Kin}ematic \ckYellow \underline Graphs}
-    
-    \bigskip
+    \vspace{1cm}
     Implemented in \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/python.pdf}} using
     \begin{columns}
         \column{0.5\linewidth}
@@ -28,7 +33,7 @@
             \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wcxf.pdf}} \texttt{wcxf} {\footnotesize(Wilson coefficients)}
             \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wilson.pdf}} \texttt{Wilson} {\footnotesize(Wilson coeff. running)}
             \item 
-            \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/sqla.png}} {\footnotesize (output)}
+            \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/sqla.png}} {\footnotesize (Output)}
             \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/flavio.pdf}} \texttt{Flavio} {\footnotesize(Observables)}
         \end{itemize}
      \end{columns}
@@ -56,7 +61,7 @@
 \begin{frame}{Software}
     General steps:
     \begin{enumerate}
-        \item \stress{Scan}: Calculate your distribution for every point\\ (Cheap: just use theoretical calculations)\\
+        \item \stress{Scan}: Calculate distribution for sample points in parameter space\\ (Cheap: just use theoretical calculations)\\
         {\footnotesize e.g. $\dd\Gamma/\dd q^2$ in Wilson space}
         \begin{itemize}
             \item Arbitrary python functions can be specified (e.g. from \texttt{flavio})

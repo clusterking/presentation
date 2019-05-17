@@ -59,7 +59,7 @@
 \end{frame}
 
 \begin{frame}{Software}
-    General steps:
+    \framesubtitle{Steps}
     \begin{enumerate}
         \item \stress{Scan}: Calculate distribution for sample points in parameter space\\ (Cheap: just use theoretical calculations)\\
         {\footnotesize e.g. $\dd\Gamma/\dd q^2$ in Wilson space}
@@ -76,6 +76,7 @@
     \end{enumerate}
 \end{frame}
 
+\ifexamples
 \begin{frame}[t, fragile]{Software}{Quick tutorial}
     Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
     {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
@@ -152,3 +153,4 @@
         \includegraphics[width=6.8cm]{figures/plots/plot_minmax_02.pdf}\\
     \end{changemargin}
 \end{frame}
+\fi

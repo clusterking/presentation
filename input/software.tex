@@ -1,47 +1,52 @@
 \section{Software}
-\begin{frame}{Software}
-    Can we make this easy for everyone?    
+\begin{frame}[t]{Software}
+    \only<+->{Can we make this \stress{easy} for everyone? }
     
-    \vspace{-0.4cm}
-    {\raisebox{0.3cm}{\scalebox{1.3}{\color[gray]{0.4}\texttt{https://github.com/}}}\hspace{0.1cm}{\includegraphics[height=1.6cm]{figures/software_logos/clusterking.pdf}}}
-   
-    \vspace{-0.25cm}\hspace{4.2cm}{\ckBlue\underline{Cluster}ing \color{black}of \ckRed\underline{Kin}ematic \ckYellow \underline Graphs}
+    \only<+->{
+        \vspace{-0.4cm}
+        {\raisebox{0.3cm}{\scalebox{1.3}{\color[gray]{0.4}\texttt{https://github.com/}}}\hspace{0.1cm}{\includegraphics[height=1.6cm]{figures/software_logos/clusterking.pdf}}}
+       
+        \vspace{-0.25cm}\hspace{4.2cm}{\ckBlue\underline{Cluster}ing \color{black}of \ckRed\underline{Kin}ematic \ckYellow \underline Graphs}
+        
+        \vspace{0.5cm}
+        
+        Our project is \stress{openly} and \stress{actively} developed on
+        \vcenteredinclude{\includegraphics[height=2ex]{figures/software_logos/octocat.pdf}\hspace{-0.05cm}
+           \includegraphics[height=2ex]{figures/software_logos/github.pdf}}\\
+        %{\color{purple}\url{https://github.com/clusterking}}
+        \vspace{-0.9cm}
+    }
     
-    \vspace{0.5cm}
-    
-    Our project is \stress{openly} and \stress{actively} developed on
-    \vcenteredinclude{\includegraphics[height=2ex]{figures/software_logos/octocat.pdf}\hspace{-0.05cm}
-       \includegraphics[height=2ex]{figures/software_logos/github.pdf}}\\
-    %{\color{purple}\url{https://github.com/clusterking}}
-    \vspace{-0.9cm}
-    
-    \vspace{1cm}
-    Implemented in \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/python.pdf}} using
-    \begin{columns}
-        \column{0.5\linewidth}
-        \begin{itemize}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/numpy_noname.pdf}} \texttt{numpy} {\footnotesize(fast numerics)}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/pandas_noname.pdf}} \texttt{pandas} {\footnotesize(dataframes)}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/matplotlib.pdf}} \texttt{matplotlib} {\footnotesize(beautiful plots)}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/sklearn_small.pdf}} \texttt{scikit-learn} {\footnotesize(clustering)}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/scipy.pdf}} \texttt{scipy} {\footnotesize(integration and clustering)}
-            %\item 
-        \end{itemize}
-        \column{0.5\linewidth}
-        \begin{itemize}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter} {\footnotesize(interactive notebooks)}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wcxf.pdf}} \texttt{wcxf} {\footnotesize(Wilson coefficients)}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wilson.pdf}} \texttt{Wilson} {\footnotesize(Wilson coeff. running)}
-            \item 
-            \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/sqla.png}} {\footnotesize (Output)}
-            \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/flavio.pdf}} \texttt{Flavio} {\footnotesize(Observables)}
-        \end{itemize}
-     \end{columns}
-     
-     \vspace{0.3cm}
-     \begin{center}
-         Installation: \ {\color{purple}\texttt{pip3 install clusterking}}
-    \end{center}
+    \only<+->{
+        \vspace{1cm}
+        Implemented in \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/python.pdf}} using
+        \begin{columns}
+            \column{0.5\linewidth}
+            \begin{itemize}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/numpy_noname.pdf}} \texttt{numpy} {\footnotesize(fast numerics)}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/pandas_noname.pdf}} \texttt{pandas} {\footnotesize(dataframes)}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/matplotlib.pdf}} \texttt{matplotlib} {\footnotesize(beautiful plots)}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/sklearn_small.pdf}} \texttt{scikit-learn} {\footnotesize(clustering)}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/scipy.pdf}} \texttt{scipy} {\footnotesize(integration and clustering)}
+                %\item 
+            \end{itemize}
+            \column{0.5\linewidth}
+            \begin{itemize}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/jupyter.pdf}} \texttt{jupyter} {\footnotesize(interactive notebooks)}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wcxf.pdf}} \texttt{wcxf} {\footnotesize(Wilson coefficients)}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/wilson.pdf}} \texttt{Wilson} {\footnotesize(Wilson coeff. running)}
+                \item 
+                \vcenteredinclude{\includegraphics[height=3.5ex]{figures/software_logos/sqla.png}} {\footnotesize (Output format)}
+                \item \vcenteredinclude{\includegraphics[height=4ex]{figures/software_logos/flavio.pdf}} \texttt{Flavio} {\footnotesize(Observables)}
+            \end{itemize}
+         \end{columns}
+     }
+     \only<+->{
+         \vspace{0.1cm}
+         \begin{center}
+             Installation: \ {\color{purple}\texttt{pip3 install clusterking}}
+        \end{center}
+    }
 \end{frame}
 
 \begin{frame}{Software}
@@ -61,18 +66,19 @@
 \begin{frame}{Software}
     \framesubtitle{Steps}
     \begin{enumerate}
-        \item \stress{Scan}: Calculate distribution for sample points in parameter space\\ (Cheap: just use theoretical calculations)\\
+        \item<+-> \stress{Scan}: Calculate distribution for sample points in parameter space\\
         {\footnotesize e.g. $\dd\Gamma/\dd q^2$ in Wilson space}
         \begin{itemize}
-            \item Arbitrary python functions can be specified (e.g. from \texttt{flavio})
+            \item Take arbitrary python functions (e.g. from \texttt{flavio})
             \item Parallel processing supported
         \end{itemize}
-        \item \stress{Add uncertainties} (optional): Easy interface to add various kinds of uncertainties\\
+        \item<+-> \stress{Add uncertainties} (optional)\\
          %{\footnotesize(Poisson, flat relative errors, errors given by covariance matrix, max. correlated errors etc.)}
-        \item \stress{Cluster}: Take the binned distributions and cluster them\\
+        \item<+-> \stress{Cluster}%: Take the binned distributions and cluster them\\
        % {\footnotesize Clustering class is subclassed to support any clustering algorithm}
-        \item \stress{Benchmark points}: Select one representative for each cluster
-        \item \stress{Plot}: Various plotting methods are provided
+        \item<+-> \stress{Benchmark points}%: Select one representative for each cluster
+        \item<+-> \stress{Plot!}\\
+        {\small Various plotting methods at your fingertips}
     \end{enumerate}
 \end{frame}
 

@@ -1,25 +1,35 @@
 \section{Algorithm}
 
-\begin{frame}{Getting started}
+\begin{frame}[t]{Getting started}
     \framesubtitle{What do we need?}
-	\stress{Quantify \enquote{similar}} {\color{purple}(\emph{metric})}:\\
-	$\lra$ Similarity test\\
-    $\phantom{\lra}$ {\small e.g. $\chi^2$ test, Kolmogorov test, \dots}
 	
-	
-	
-	\bigskip
-	\stress{Build up groups} {\color{purple}(\emph{clusters})} of similar distributions:\\
-	$\lra$ Clustering algorithm\\
-    $\phantom{\lra}$ {\small e.g. Hierarchical clustering, \dots}
-	
-    \bigskip
-    \stress{Select representatives} {\color{purple}(\emph{benchmark points})} from each cluster
+    \vspace{0.5cm}
+    \begin{itemize}
+    \item<+->{
+        \stress{Quantify \enquote{similar}} {\color{purple}(\emph{metric})}:\\
+    	$\lra$ Similarity test\\
+        $\phantom{\lra}$ {\small e.g. $\chi^2$ test, Kolmogorov test, \dots}
+	}
     
-	\bigskip
-	\stress{How many} clusters do we want?\\
-	$\lra$ Add experimental error expectation\\
-	$\lra$ Keep as many clusters as we can distinguish
+    \item<+->{
+    	\bigskip
+    	\stress{Build up groups} {\color{purple}(\emph{clusters})} of similar distributions:\\
+    	$\lra$ Clustering algorithm\\
+        $\phantom{\lra}$ {\small e.g. Hierarchical clustering, \dots}
+    }
+    
+    \item<+->{
+        \bigskip
+        \stress{Select representatives} {\color{purple}(\emph{benchmark points})} from each cluster
+    }
+    
+    \item<+->{
+    	\bigskip
+    	\stress{How many} clusters do we want?\\
+    	$\lra$ Add experimental error expectation\\
+    	$\lra$ Keep as many clusters as we can distinguish
+    }
+    \end{itemize}
 \end{frame}
 
 \begin{frame}[t]{Example: Hierarchical Clustering}

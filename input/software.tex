@@ -75,150 +75,32 @@
     Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
     {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
     
-    \begin{minted}[
-        mathescape,
-        linenos,
-        numbersep=5pt,
-        gobble=6,
-        frame=lines,
-        fontsize=\small,
-        framesep=2mm,
-        tabsize=4
-    ]{python}
-      import clusterking as ck
-      
-      d = ck.Data()
-      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
-    \end{minted}
+    \only<1>{
+        \inputminted[lastline=4]{python}{code/scan.py}
+    }
+    \only<2>{
+        \inputminted[lastline=9]{python}{code/scan.py}
+    }
+    \only<3>{
+        \inputminted[lastline=15]{python}{code/scan.py}
+    }
+    \only<4>{
+        \inputminted[]{python}{code/scan.py}
+    }
 
-\end{frame}
-
-\begin{frame}[t, fragile]{Software}{Quick tutorial}
-    Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
-    {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
-    
-    \begin{minted}[
-            mathescape,
-        linenos,
-        numbersep=5pt,
-        gobble=6,
-        frame=lines,
-        fontsize=\small,
-        framesep=2mm,
-        tabsize=4
-    ]{python}
-      import clusterking as ck
-      
-      d = ck.Data()
-      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
-      
-      s.set_dfunction(
-         dGq2,
-         binning=linspace(q2min, q2max, 10),
-      )
-    \end{minted}
-\end{frame}
-
-\begin{frame}[t, fragile]{Software}{Quick tutorial}
-    Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
-    {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
-    
-    \begin{minted}[
-            mathescape,
-        linenos,
-        numbersep=5pt,
-        gobble=6,
-        frame=lines,
-        fontsize=\small,
-        framesep=2mm,
-        tabsize=4
-    ]{python}
-      import clusterking as ck
-      
-      d = ck.Data()
-      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
-      
-      s.set_dfunction(
-         dGq2,
-         binning=linspace(q2min, q2max, 10),
-      )
-      
-      s.set_wpoints_equidist({
-        "CVL_bctaunutau": (-0.3, 0.3, 10),
-        "CSL_bctaunutau": (-0.3, 0.3, 10),
-        "CT_bctaunutau": (-0.4, 0.4, 10)
-      })
-    \end{minted}
-\end{frame}
-
-\begin{frame}[t, fragile]{Software}{Quick tutorial}
-    Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
-    {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
-    
-    \begin{minted}[
-            mathescape,
-        linenos,
-        numbersep=5pt,
-        gobble=6,
-        frame=lines,
-        fontsize=\small,
-        framesep=2mm,
-        tabsize=4
-    ]{python}
-      import clusterking as ck
-       
-      d = ck.Data()
-      s = ck.scan.WilsonScanner(scale=5, eft='WET', basis='flavio')
-        
-      s.set_dfunction(
-         dGq2,
-         binning=linspace(q2min, q2max, 10),
-      )
-      
-      s.set_wpoints_equidist({
-             "CVL_bctaunutau": (-0.3, 0.3, 10),
-             "CSL_bctaunutau": (-0.3, 0.3, 10),
-             "CT_bctaunutau": (-0.4, 0.4, 10)
-      })
-      
-      s.run(d)
-    \end{minted}
 \end{frame}
 
 \begin{frame}[fragile]{Software}{Quick tutorial}
     Now we cluster it: 
     
-    \begin{minted}[
-        mathescape,
-        linenos,
-        numbersep=5pt,
-        gobble=8,
-        frame=lines,
-        fontsize=\small,
-        framesep=2mm,
-        tabsize=4
-    ]{python}
-        c = HierarchyCluster(d)
-        c.set_metric()
-        c.build_hierarchy()
-        c.cluster(max_d=0.1)
-    \end{minted}
+    \inputminted{python}{code/cluster.py}
     
     \begin{columns}
         \column{0.4\linewidth}
         And can directly plot it:
         
         \begin{changemargin}{0.32cm}{0cm}
-        \begin{minted}[
-        mathescape,
-        linenos,
-        numbersep=5pt,
-        gobble=12,
-        frame=lines,
-        fontsize=\small,
-        framesep=2mm,
-        tabsize=4
-        ]{python}
+        \begin{minted}[gobble=12]{python}
             d.plot_clusters_scatter([
                 "CVL_bctaunutau",
                 "CSL_bctaunutau",
@@ -235,16 +117,7 @@
 
 \begin{frame}[fragile, t]{Software}{Quick tutorial}
 \vspace{0.75cm}
-\begin{minted}[
-mathescape,
-linenos,
-numbersep=5pt,
-gobble=4,
-frame=lines,
-fontsize=\small,
-framesep=2mm,
-tabsize=4
-]{python}
+\begin{minted}[gobble=4]{python}
     d.plot_clusters_scatter(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \vspace{0.2cm}
@@ -254,16 +127,7 @@ tabsize=4
 
 \begin{frame}[fragile, t]{Software}{Quick tutorial}
 \vspace{0.75cm}
-\begin{minted}[
-mathescape,
-linenos,
-numbersep=5pt,
-gobble=4,
-frame=lines,
-fontsize=\small,
-framesep=2mm,
-tabsize=4
-]{python}
+\begin{minted}[gobble=4]{python}
     d.plot_clusters_fill(['CVL_bctaunutau', 'CSL_bctaunutau'])
 \end{minted}
 \centering
@@ -271,17 +135,8 @@ tabsize=4
 \end{frame}
 
 \begin{frame}[fragile]{Software}{Quick tutorial}
-    \begin{minted}[
-        mathescape,
-        linenos,
-        numbersep=5pt,
-        gobble=8,
-        frame=lines,
-        fontsize=\small,
-        framesep=2mm,
-        tabsize=4
-    ]{python}
-        d.plot_dist_box()  # left plot
+    \begin{minted}[gobble=8]{python}
+        d.plot_dist_box()                   # left plot
         d.plot_dist_minmax(clusters=[0,2])  # right plot
     \end{minted}
     

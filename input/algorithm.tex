@@ -108,13 +108,22 @@
 	\begin{itemize}
 		\item So far we have a metric between histograms $H_{1,2}$ corresponding to parameter points $p_{1,2}$
 		\item Pull back to metric between points in parameter space: \hhl{$d(p_1,p_2):=\chi^2(H_1, H_2)/(N-1)$} \srem{divided out degrees of freedom such that expectation value is 1 under null hypothesis}
-		\item Our clustering algorithm will be iterative: 
+		\item Our clustering algorithm will be iterative \srem{(hierarchical)}: 
 		\begin{enumerate}
-			\item start with some clusters
-			\item merge clusters that look similar
-			\item repeat until stopping criterion is reached
+			\item start with every point its own cluster
+			\item merge the \hhl{clusters} that look the most similar \srem{(smallest distance $\leftrightarrow$ metric)}
+			\item repeat 2 until stopping criterion is reached
 		\end{enumerate}
 		$\Lra$ Actually need a \hhl{metric between clusters}!
+		\item Given clusters $C_{1,2}$ can simply construct metric via $d$ via $L^p$ norms:
+		\begin{align*}
+			&D_\infty(C_1, C_2)\equiv  \max_{c_1\in C_1,\, c_2\in C_2} d(c_1, c_2)\,,
+			\qquad \text{or}\\
+			&D_1(C_1, C_2)\equiv  \frac 1{|C_1||C_2|}\sum_{c_1\in C_1,\, c_2\in C_2} d(c_1, c_2)\,,
+			\qquad \text{etc.}
+			\label{eq:metric_D}
+		\end{align*}
+		\item We use $D_\infty$ in the paper \srem{(easier to interpret)}
 	\end{itemize}
 \end{frame}
 
@@ -160,3 +169,24 @@
 	
 %	}
 \end{frame}
+%
+\begin{frame}{Stopping criterion}
+	\begin{block}{When to stop merging clusters?}
+		\begin{itemize}
+			\item Obvious choice: As soon as distance between each pair of clusters exceeds cutoff value $c$ \srem{($D(C_i, C_j) > c$ for any clusters $C_{i,j}$)}
+			\item For $D_\infty$: All points \emph{within} cluster will have mutual distance $\chi^2_{N-1}/(N-1) < c$
+			\item So $c$ should be chosen such that $\chi^2_{N-1}/(N-1)=c$ means \enquote{almost distinguishable but not quite}
+		\end{itemize}
+	{\centering
+	\includegraphics[width=7cm,clip,trim=0cm 0cm 0cm 0.75cm]{figures/erratum-plots/cutoff_values.pdf}\par}
+	\end{block}
+\end{frame}
+%
+\begin{frame}{Finding benchmark points}
+	\begin{align*}%\label{eq:FOM}
+	f_1(c, C) \equiv \frac 1{|C|}\sum_{c_i\in C} d(c, c_i),
+	\quad f_2(c, C) \equiv \sqrt{\sum_{c_i\in C} d(c, c_i)^2},
+	\quad f_\infty(c, C) &\equiv \max_{c_i\in C} d(c, c_i),
+	\end{align*}
+\end{frame}
+%

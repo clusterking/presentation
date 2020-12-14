@@ -39,7 +39,7 @@
 \end{frame}
 \subsection{Metric}
 \begin{frame}{The metric}{Similarity between distributions}
-	\begin{itemize}
+	\begin{itemize}[<+->]
 		\item Let's take two points in parameter space $p_{1,2}$ and their corresponding kinematic histograms \hhl{$H_{1,2}$} with bin contents \hhl{$n_{1i}$}
 		\item How well would we be able to distinguish between both cases?
 		\item Estimate experimental uncertainties when conducting measurement \srem{(under the assumption that $H_k$ is the truth distribution)} $\lra$ Covariance matrices \hhl{$\Sigma_{1,2}$} 
@@ -51,7 +51,7 @@
 \end{frame}
 
 \begin{frame}{The metric}{$\chi^2$ metric}
-	\begin{itemize}
+	\begin{itemize}[<+->]
 		\item Normal $\chi^2$ distance: 
 		\begin{align}
 		\chi^2(H_1, H_2) = \chi^2(H_1, H_2) = \sum_{i=1}^N \frac{(n_{2i}-n_{1i})^2}{\sigma_{2i}^2+\sigma_{2i}^2}
@@ -107,16 +107,16 @@
 
 \begin{frame}{The metric}{Expanding to a metric between clusters}
 	\begin{itemize}
-		\item So far we have a metric between histograms $H_{1,2}$ corresponding to parameter points $p_{1,2}$
-		\item Pull back to metric between points in parameter space: \hhl{$d(p_1,p_2):=\chi^2(H_1, H_2)/(N-1)$} \srem{divided out degrees of freedom such that expectation value is 1 under null hypothesis}
-		\item Our clustering algorithm will be iterative \srem{(hierarchical)}: 
+		\item<+-> So far we have a metric between histograms $H_{1,2}$ corresponding to parameter points $p_{1,2}$
+		\item<+-> Pull back to metric between points in parameter space: \hhl{$d(p_1,p_2):=\chi^2(H_1, H_2)/(N-1)$} \srem{divided out degrees of freedom such that expectation value is 1 under null hypothesis}
+		\item<+-> Our clustering algorithm will be iterative \srem{(hierarchical)}: 
 		\begin{enumerate}
 			\item start with every point its own cluster
 			\item merge the \hhl{clusters} that look the most similar \srem{(smallest distance $\leftrightarrow$ metric)}
 			\item repeat 2 until stopping criterion is reached
 		\end{enumerate}
 		$\Lra$ Actually need a \hhl{metric between clusters}!
-		\item Given clusters $C_{1,2}$ can simply construct metric via $d$ via $L^p$ norms:
+		\item<+-> Given clusters $C_{1,2}$ can simply construct metric via $d$ via $L^p$ norms:
 		\begin{align*}
 			&D_\infty(C_1, C_2)\equiv  \max_{c_1\in C_1,\, c_2\in C_2} d(c_1, c_2)\,,
 			\qquad \text{or}\\
@@ -124,7 +124,7 @@
 			\qquad \text{etc.}
 			\label{eq:metric_D}
 		\end{align*}
-		\item We use $D_\infty$ in the paper \srem{(easier to interpret)}
+		\item<+-> We use $D_\infty$ in the paper \srem{(easier to interpret)}
 	\end{itemize}
 \end{frame}
 \subsection{Hierarchical clustering}
@@ -187,7 +187,7 @@
 \subsection{Benchmark points}
 \begin{frame}{Finding benchmark points}
 	Given a cluster $C$, how do we pick $c\in C$ that is \enquote{the \hhl{most representative}}?
-	\begin{itemize}
+	\begin{itemize}[<+->]
 		\item Intuition: Want to pick \enquote{middle} of cluster
 		\item Minimize function of distances between point and all other points in cluster
 		\item Examples \srem{(of different sensitivity to outliers)}:

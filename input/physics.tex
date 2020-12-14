@@ -4,30 +4,32 @@
 \begin{frame}{Physics setup}
 	\begin{block}{Lagrangian}
 	\begin{equation*}\label{eq:Lbc}
-	\mathcal{L}_\text{eff} = -\frac{4G_F}{\sqrt{2}}V_{cb}\left[C_{VL}O_{VL}+C_{VR}O_{VR}+C_{SL}O_{SL}+C_{SR}O_{SR}+C_{T}O_{T}\right]+\text{h.c.}
+	\mathcal{L}_\text{eff} = -\frac{4G_F}{\sqrt{2}}V_{cb}\left[\hhl{C_{VL}}\known{O_{VL}}+\hhl{C_{VR}}\known{O_{VR}}+\hhl{C_{SL}}\known{O_{SL}}+\hhl{C_{SR}}\known{O_{SR}}+\hhl{C_{T}}\known{O_{T}}\right]+\text{h.c.}
 	\end{equation*}
 	with the effective operators
 	%
 	\begin{align*}
-	O_{VL}&= (\bar c \gamma_\mu P_L b)(\bar \tau \gamma^\mu P_L \nu_\tau)\,, &  O_{VR}&= (\bar c \gamma_\mu P_R \,b)(\bar \tau \gamma^\mu P_L \nu_\tau)\,,\notag\\
-	O_{SL}&= (\bar c P_L b)(\bar \tau  P_L \nu_\tau)\,,& O_{SR}&= (\bar c  P_R b)(\bar \tau  P_L \nu_\tau)\,, \\
-	O_{T}&= (\bar c \sigma_{\mu\nu} P_L b)(\bar \tau \sigma^{\mu\nu} P_L \nu_\tau)\,. &\notag
+	\known{O_{VL}}&= (\bar c \gamma_\mu P_L b)(\bar \tau \gamma^\mu P_L \nu_\tau)\,, &  \known{O_{VR}}&= (\bar c \gamma_\mu P_R \,b)(\bar \tau \gamma^\mu P_L \nu_\tau)\,,\notag\\
+	\known{O_{SL}}&= (\bar c P_L b)(\bar \tau  P_L \nu_\tau)\,,& \known{O_{SR}}&= (\bar c  P_R b)(\bar \tau  P_L \nu_\tau)\,, \\
+	\known{O_{T}}&= (\bar c \sigma_{\mu\nu} P_L b)(\bar \tau \sigma^{\mu\nu} P_L \nu_\tau)\,. &\notag
 	\end{align*} 
 	where $P_{R,L}=\frac{1}{2}(1\pm\gamma_5)$, $\sigma^{\mu\nu}=\frac{\mathrm i}{2}[\gamma^\mu,\gamma^\nu]$
 	
 	\end{block}
 	\begin{block}{Assumptions}
 	\begin{itemize}
-		\item $CP$ conserving limit $\Lra$ real Wilson coeffs
-		\item Presentational reasons: Consider $C_{VL}$, $C_{SL}$, $C_T$
-		\item $C_T$ is constrained from longitudinal polarization fraction $F_L$ $\Lra$ $C_T\in [-0.1, 0.1]$
-		\item $C_{VL}, C_{SL}\in [-0.5, 0.5]$
+		\item $CP$ conserving limit $\Lra$ real Wilson coefficients
+		\item Presentational reasons: Consider only \hhl{$C_{VL}$, $C_{SL}$, $C_T$}
+		\item \hhl{$C_T$} is constrained from longitudinal polarization fraction $F_L$ $\Lra$ $\hhl{C_T}\in [-0.1, 0.1]$
+		\item $\hhl{C_{VL}, C_{SL}}\in [-0.5, 0.5]$
 	\end{itemize}
 	\end{block}
 \end{frame}
 
 \begin{frame}{Observables}
 	We now look at several observables of $\mathrm{BR}(B\to D^{0*} \tau\nu)$
+	
+	\bigskip
 	\begin{itemize}
 		\item \hhl{$\theta_\tau$}: angle between the $\tau$ and the $B$ meson in the dilepton mass frame
 		\item \hhl{$\theta_V$}: angle between $D^{0*}$ and $B$ meson
@@ -35,7 +37,11 @@
 		\item \hhl{$E_l$}: energy of the light lepton $\ell$ from the 5-body decay $\bar B\to D \tau^-(\to\ell\, \bar\nu_\ell\,\nu_\tau)\bar\nu_\tau$
 	\end{itemize}
 
+	\bigskip
 	If not stated otherwise, we assign Poisson uncertainties corresponding to a yield of \hhl{700} and \hhl{$1\%$ relative uncertainties} (uncorrelated)
+	
+	\bigskip
+	All observables are either calculated by \hhl{\texttt{flavio}} or with our own implementation at \hhl{\href{https://github.com/clusterking/clusterking_physics}{github.com/clusterking/clusterking\_physics}}.
 \end{frame}
 
 \begin{frame}{$\cos\theta_\tau$}{2D cuts of clustered parameter space}

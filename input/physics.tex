@@ -68,20 +68,22 @@
 %
 \begin{frame}{$q^2$}{Number of clusters vs yield and systematic uncertainties}
 	\centering
-	\includegraphics[width=10cm]{figures/from-paper/clust_yield.pdf}
+	Estimating sensitivity of different scenarios by counting clusters
+	\includegraphics[width=10cm,clip,trim=0cm 0cm 0cm 1cm]{figures/from-paper/clust_yield.pdf}
 	% validate: Rel uncertinaties irrelevant for very low yields
 	% stat uncertainty irrelevant for very high yields (dominated syst)
 \end{frame}
 %
-\begin{frame}{$E_\ell$}
+\begin{frame}{$E_\ell$}{\relax}
 	\centering
 	\begin{changemargin}{-1cm}{-1cm}
 	{
 		\begin{minipage}{10cm}
+			{\small 1\% rel. syst. uncert. + poisson for 1000, 1800 or 2000 events:}
 			\centering
-			{\includegraphics[clip, trim=4.5cm 1cm 21cm 2.0cm, height=1.3cm]{figures/from-paper/El_tanbeta_err1}}
-			{\includegraphics[clip, trim=4.5cm 1cm 21cm 2.0cm, height=1.3cm]{figures/from-paper/El_tanbeta_err2}}
-			{\includegraphics[clip, trim=4.5cm 1cm 21cm 2.0cm, height=1.3cm]{figures/from-paper/El_tanbeta_err3}}
+			{\includegraphics[clip, trim=4.5cm 1cm 21cm 2.0cm, height=1.2cm]{figures/from-paper/El_tanbeta_err1}}
+			{\includegraphics[clip, trim=4.5cm 1cm 21cm 2.0cm, height=1.2cm]{figures/from-paper/El_tanbeta_err2}}
+			{\includegraphics[clip, trim=4.5cm 1cm 21cm 2.0cm, height=1.2cm]{figures/from-paper/El_tanbeta_err3}}
 	\end{minipage}
 	}
 	\begin{minipage}{2cm}
@@ -89,13 +91,26 @@
 		\includegraphics[height=1.7cm]{figures/from-paper/el_err3_legend.pdf}
 	\end{minipage}
 	\end{changemargin}
+	\begin{columns}
+	\column{0.5\textwidth}
+	\includegraphics[width=5cm]{figures/type2_2hdm_vs_rd_rds_1205_5442_results_only_cluster.pdf}
+	\column{0.5\textwidth}
+	\begin{itemize}
+	\item $\tan(\beta)/m_{H^\pm}$ is parameter of 2 Higgs Doublet Models \srem{(can be expressed through our Wilson coefficients)}
+	\item Figure on the left is done by 2D fits to $m_\text{miss}^2$ and $|\vec p_\ell|$
+	\item Were hoping to see same structure when only looking at $E_\ell \leftrightsquigarrow |\vec p_\ell|$, not quite the case
+	\end{itemize}
+	\end{columns}
 \end{frame}
 
-\begin{frame}{$E_\ell$}
+\begin{frame}{$E_\ell$}{Looking at benchmark points}
 	\begin{changemargin}{-1cm}{-1cm}
 		\begin{center}
 			{\includegraphics[height=5.2cm, clip, trim=0cm 0cm 1.2cm 1cm]{figures/from-paper/El_tanbeta_dist3}}
 			{\includegraphics[height=5.2cm, clip, trim=2.3cm 0cm 2cm 0cm]{figures/from-paper/El_tanbeta_dist3_bpoint_distances}}
 		\end{center}
 	\end{changemargin}
+%	\begin{itemize}
+%		\item Matrix of distances of BPs further shows that only the "middle cluster" is very different
+%	\end{itemize}
 \end{frame}

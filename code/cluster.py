@@ -1,5 +1,5 @@
-c = ck.cluster.HierarchyCluster(d)
+c = ck.cluster.HierarchyCluster()
 c.set_metric()         # Use default metric (Euclidean)
-c.build_hierarchy()    # Build up clustering hierarchy
-c.cluster(max_d=0.15)  # "Cut off" hierarchy
-c.write()              # Write results to d
+c.set_max_d(1)         # Cut-off value
+r = c.run(d)           # Run over data
+r.write()              # Write results back to d

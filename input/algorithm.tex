@@ -1,5 +1,6 @@
-\section{Algorithm}
-
+\section{Clustering algorithm}
+\subsection{Intro}
+\frame{\tableofcontents[currentsection, currentsubsection]}
 \begin{frame}[t]{Getting started}
     \framesubtitle{What do we need?}
 	
@@ -36,7 +37,7 @@
     }
     \end{itemize}
 \end{frame}
-
+\subsection{Metric}
 \begin{frame}{The metric}{Similarity between distributions}
 	\begin{itemize}
 		\item Let's take two points in parameter space $p_{1,2}$ and their corresponding kinematic histograms \hhl{$H_{1,2}$} with bin contents \hhl{$n_{1i}$}
@@ -126,7 +127,7 @@
 		\item We use $D_\infty$ in the paper \srem{(easier to interpret)}
 	\end{itemize}
 \end{frame}
-
+\subsection{Hierarchical clustering}
 \begin{frame}[t]{Example: Hierarchical Clustering}
 	\vspace{0.5cm}
    \centering
@@ -170,6 +171,7 @@
 %	}
 \end{frame}
 %
+\subsection{Stopping}
 \begin{frame}{Stopping criterion}
 	\begin{block}{When to stop merging clusters?}
 		\begin{itemize}
@@ -182,6 +184,7 @@
 	\end{block}
 \end{frame}
 %
+\subsection{Benchmark points}
 \begin{frame}{Finding benchmark points}
 	Given a cluster $C$, how do we pick $c\in C$ that is \enquote{the \hhl{most representative}}?
 	\begin{itemize}

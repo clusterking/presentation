@@ -183,10 +183,19 @@
 \end{frame}
 %
 \begin{frame}{Finding benchmark points}
-	\begin{align*}%\label{eq:FOM}
-	f_1(c, C) \equiv \frac 1{|C|}\sum_{c_i\in C} d(c, c_i),
-	\quad f_2(c, C) \equiv \sqrt{\sum_{c_i\in C} d(c, c_i)^2},
-	\quad f_\infty(c, C) &\equiv \max_{c_i\in C} d(c, c_i),
-	\end{align*}
+	Given a cluster $C$, how do we pick $c\in C$ that is \enquote{the \hhl{most representative}}?
+	\begin{itemize}
+		\item Intuition: Want to pick \enquote{middle} of cluster
+		\item Minimize function of distances between point and all other points in cluster
+		\item Examples \srem{(of different sensitivity to outliers)}:
+		\begin{align*}%\label{eq:FOM}
+		&f_1(c, C) \equiv \frac 1{|C|}\sum_{c_i\in C} d(c, c_i),\\
+		&f_2(c, C) \equiv \sqrt{\sum_{c_i\in C} d(c, c_i)^2},\\
+		&f_\infty(c, C) \equiv \max_{c_i\in C} d(c, c_i),
+		\end{align*}
+		\item We used $f_1$ in the examples
+	\end{itemize}
+	
+	
 \end{frame}
 %

@@ -32,7 +32,7 @@
     \item<+->{
     	\bigskip
     	\stress{How many} clusters do we want?\\
-    	$\lra$ Add experimental error expectation\\
+    	$\lra$ Estimate expected experimental uncertainties\\
     	$\lra$ Keep as many clusters as we can distinguish
     }
     \end{itemize}
@@ -40,11 +40,10 @@
 \subsection{Metric}
 \begin{frame}{The metric}{Similarity between distributions}
 	\begin{itemize}[<+->]
-		\item Let's take two points in parameter space $p_{1,2}$ and their corresponding kinematic histograms \hhl{$H_{1,2}$} with bin contents \hhl{$n_{1i}$}
+		\item Let's take two points in parameter space $p_{1,2}$ and their corresponding kinematic histograms \hhl{$H_{1,2}$} with bin contents \hhl{$n_{ki}$, $k=1,2$}
 		\item How well would we be able to distinguish between both cases?
 		\item Estimate experimental uncertainties when conducting measurement \srem{(under the assumption that $H_k$ is the truth distribution)} $\lra$ Covariance matrices \hhl{$\Sigma_{1,2}$} 
 		\item Let's assume that the measurement would indeed return the expectation value $H_{1,2}$ with $\Sigma_{1,2}$
-		\item Use a test statistic that allows to include uncertainties.  
 		\item In the paper we only compared the shape of the histograms $\lra$ test statistic shouldn't depend on normalization
 		\item Used a \hhl{$\chi^2$ test with normalization} \srem{(and made some mistakes in the paper)}	
 	\end{itemize}
@@ -52,13 +51,13 @@
 
 \begin{frame}{The metric}{$\chi^2$ metric}
 	\begin{itemize}[<+->]
-		\item Normal $\chi^2$ distance: 
+		\item Normal $\chi^2$ distance ($\Sigma_k = \operatorname{diag}\sigma_{ki}^2$): 
 		\begin{align}
-		\chi^2(H_1, H_2) = \chi^2(H_1, H_2) = \sum_{i=1}^N \frac{(n_{2i}-n_{1i})^2}{\sigma_{2i}^2+\sigma_{2i}^2}
+		\chi^2(H_1, H_2) = \sum_{i=1}^N \frac{(n_{2i}-n_{1i})^2}{\sigma_{2i}^2+\sigma_{1i}^2}
 		\label{eq:chi2_nonorm}
 		\end{align}
 		$\chi^2(H_1,H_2)\hhl{\sim \chi^2_N}$ under null hypothesis $E[n_{2i}]=E[n_{1i}]$
-		\item \hhl{Normalized} ($\Sigma_k = \operatorname{diag}\sigma_{ki}^2$):
+		\item \hhl{Normalized} \srem{($N_k=\sum_i n_{ki}$)}:
 		\begin{align}
 		  \chi^2(H_1, H_2) = \sum_{i=1}^N \frac{(N_1n_{2i}-N_2n_{1i})^2}{N_1^2\sigma_{2i}^2+N_2^2\sigma_{2i}^2}\,.
 		  \label{eq:chi2_root}
@@ -76,6 +75,7 @@
 			\item Define $\Delta_i=\displaystyle\frac{n_{1i}}{N_1}-\frac{n_{2i}}{N_2}$
 			\item Then $\operatorname{Cov}(\Delta_i, \Delta_j)=\displaystyle \frac{\Sigma_1}{N_1^2} + \frac{\Sigma_2}{N_2^2}$
 			\item Now $\chi^2(H_1,H_2):= \hhl{\sum_{i,j=1}^N \Delta_i (\Sigma^{-1})_{ij} \Delta_j}$ is approximately $\chi^2_{N-1}$ distributed
+			\item Same as \eqref{eq:chi2_root} in case of no correlations
 		\end{itemize}
 		\item Fixed in \texttt{ClusterKinG} v1.1.0
 		%\item This time we properly validated our implementation
@@ -175,9 +175,10 @@
 \begin{frame}{Stopping criterion}
 	\begin{block}{When to stop merging clusters?}
 		\begin{itemize}
+			\item Want to stop merging as soon as we can \enquote{distinguish} clusters
 			\item Obvious choice: As soon as distance between each pair of clusters exceeds cutoff value $c$ \srem{($D(C_i, C_j) > c$ for any clusters $C_{i,j}$)}
-			\item For $D_\infty$: All points \emph{within} cluster will have mutual distance $\chi^2_{N-1}/(N-1) < c$
-			\item So $c$ should be chosen such that $\chi^2_{N-1}/(N-1)=c$ means \enquote{almost distinguishable but not quite}
+			%\item For $D_\infty$: All points \emph{within} cluster will have mutual distance $\chi^2_{N-1}/(N-1) < c$
+			\item So $c$ should be chosen such that $\chi^2_{N-1}/(N-1)=c$ means \enquote{barely distinguishable}
 		\end{itemize}
 	{\centering
 	\includegraphics[width=7cm,clip,trim=0cm 0cm 0cm 0.75cm]{figures/erratum-plots/cutoff_values.pdf}\par}

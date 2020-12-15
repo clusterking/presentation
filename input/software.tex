@@ -1,4 +1,6 @@
 \section{Software}
+\subsection{Overview}
+\frame{\tableofcontents[currentsection, currentsubsection]}
 \begin{frame}[t]{Software}
     \only<+->{Can we make this \stress{easy} for everyone? }
     
@@ -10,15 +12,15 @@
         
         \vspace{0.5cm}
         
-        Our project is \stress{openly} and \stress{actively} developed on
+        Our project is \stress{openly} developed on
         \vcenteredinclude{\includegraphics[height=2ex]{figures/software_logos/octocat.pdf}\hspace{-0.05cm}
-           \includegraphics[height=2ex]{figures/software_logos/github.pdf}}\\
+           \includegraphics[height=2ex]{figures/software_logos/github.pdf}} \\\srem{(in fact even this presentation is there)}\\
         %{\color{purple}\url{https://github.com/clusterking}}
         \vspace{-0.9cm}
     }
     
     \only<+->{
-        \vspace{1cm}
+        \vspace{0.8cm}
         Implemented in \vcenteredinclude{\includegraphics[height=3ex]{figures/software_logos/python.pdf}} using
         \begin{columns}
             \column{0.5\linewidth}
@@ -63,6 +65,7 @@
     
 \end{frame}
 
+\subsection{Steps}
 \begin{frame}{Software}
     \framesubtitle{Steps}
     \begin{enumerate}
@@ -83,6 +86,7 @@
 \end{frame}
 
 \ifexamples
+\subsection{Quick tutorial}
 \begin{frame}[t, fragile]{Software}{Quick tutorial}
     Generate a sample of kinematic distributions using the \mintinline{python}{Scanner} class:\\
     {\footnotesize Here: $\dd\Gamma/\dd q^2$ for $\bdstaunu$}
